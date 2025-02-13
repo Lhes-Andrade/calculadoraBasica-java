@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package calculadora;
 
 import java.util.Scanner;
 
 public class Calculadora {
-
     private static Scanner teclado;
-
     public static void main(String[] args) {
         teclado = new Scanner(System.in);
         float numero1 = 0;
@@ -25,7 +19,7 @@ public class Calculadora {
             System.out.println("5. Salir");
             System.out.print("...");
             opcion = teclado.nextInt();
-            if (opcion < 5) {
+            if (opcion >= 1 && opcion < 5) {
                 System.out.println("\n|******* CALCULADORA *******|");
                 System.out.println("\n*Ingresa los números.");
                 System.out.println("Primer número: ");

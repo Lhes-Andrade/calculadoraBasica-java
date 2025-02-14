@@ -6,8 +6,8 @@ public class Calculadora {
     private static Scanner teclado;
     public static void main(String[] args) {
         teclado = new Scanner(System.in);
-        float numero1 = 0;
-        float numero2 = 0;
+        int numero1 = 0;
+        int numero2 = 0;
         int opcion = 0;
         boolean repeticion = true;
         while (repeticion) {
@@ -23,22 +23,22 @@ public class Calculadora {
                 System.out.println("\n|******* CALCULADORA *******|");
                 System.out.println("\n*Ingresa los números.");
                 System.out.println("Primer número: ");
-                numero1 = teclado.nextFloat();
+                numero1 = teclado.nextInt();
                 System.out.println("Segundo número: ");
-                numero2 = teclado.nextFloat();
+                numero2 = teclado.nextInt();
                 switch (opcion) {
                     case 1:
-                        System.out.println("\n" + String.format("%.0f", numero1) + " + " + String.format("%.0f", numero2) + " = " + String.format("%.0f", (numero1 + numero2)));
+                        System.out.println(numero1 + " + " + numero2 + " = " + (numero1 + numero2));
                         break;
                     case 2:
-                        System.out.println("\n" + String.format("%.0f", numero1) + " - " + String.format("%.0f", numero2) + " = " + String.format("%.0f", (numero1 - numero2)));
+                        System.out.println(numero1 + " - " + numero2 + " = " + (numero1 - numero2));
                         break;
                     case 3:
-                        System.out.println("\n" + String.format("%.0f", numero1) + " * " + String.format("%.0f", numero2) + " = " + String.format("%.0f", (numero1 * numero2)));
+                        System.out.println(numero1 + " * " + numero2 + " = " + (numero1 * numero2));
                         break;
                     case 4:
                         if (numero2 != 0) {
-                            System.out.println("\n" + String.format("%.0f", numero1) + " / " + String.format("%.1f", numero2) + " = " + String.format("%.0f", (numero1 / numero2)));
+                        System.out.println(numero1 + " / " + numero2 + " = " + (numero1 / numero2));
                         } else {
                             System.out.println("|-- No se puede dividir entre cero --|");
                         }

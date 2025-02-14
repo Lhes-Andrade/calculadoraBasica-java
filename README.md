@@ -12,4 +12,4 @@ Operadores aritmeticos, relaciones y de control:
   Suma, resta, multiplicación, división, mayor qué, menor qué, mayor igual qué, diferente, igual a.
   
 Estructuras de control:
-  for, if, if else, switch
+  for, if, if else, switch, while
